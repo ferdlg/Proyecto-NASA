@@ -1,0 +1,58 @@
+[
+    {
+        "pl_name": "OGLE-TR-10 b",
+        "pl_bmassj": 0.62,
+        "pl_rade": 14.011,
+        "pl_eqt": null,
+        "disc_year": 2004,
+        "st_spectype": null
+      },
+      {
+        "pl_name": "BD-08 2823 b",
+        "pl_bmassj": 0.045,
+        "pl_rade": null,
+        "pl_eqt": null,
+        "disc_year": 2009,
+        "st_spectype": "K3 V"
+      },
+      {
+        "pl_name": "BD-08 2823 c",
+        "pl_bmassj": 0.33,
+        "pl_rade": null,
+        "pl_eqt": null,
+        "disc_year": 2009,
+        "st_spectype": "K3 V"
+      },
+      {
+        "pl_name": "HD 104985 b",
+        "pl_bmassj": 6.3,
+        "pl_rade": null,
+        "pl_eqt": null,
+        "disc_year": 2003,
+        "st_spectype": null
+      },
+      {
+        "pl_name": "bet Pic b",
+        "pl_bmassj": null,
+        "pl_rade": null,
+        "pl_eqt": null,
+        "disc_year": 2008,
+        "st_spectype": null
+      },
+      {
+        "pl_name": "bet Pic b",
+        "pl_bmassj": 7,
+        "pl_rade": 18.495,
+        "pl_eqt": 1612,
+        "disc_year": 2008,
+        "st_spectype": null
+      },
+      {
+        "pl_name": "4 UMa b",
+        "pl_bmassj": 7.1,
+        "pl_rade": null,
+        "pl_eqt": null,
+        "disc_year": 2006,
+        "st_spectype": "K1 III"
+      }
+]
