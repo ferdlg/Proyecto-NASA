@@ -1,0 +1,10 @@
+.container__title{
+    background-color: transparent;
+}
+.container__subtitle{
+    background-color: transparent;
+}
+.container__button-link{
+    text-decoration: none;
+    color: white;
+}
