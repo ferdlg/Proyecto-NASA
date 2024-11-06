@@ -1,20 +1,20 @@
-import React from 'react';
-import HeaderNasa from './components/landingPage/HeaderNasa';
-import './assets/styles/components/landingPage/core/_landingPage.css';
-import RocketNasa from './components/landingPage/RocketNasa';
-import Cloud from './components/landingPage/Cloud';
-import ButtonNasa from './components/landingPage/ButtonNasa';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Landing  from './pages/landingPage/landing';
+import MarsPage from './pages/mars/mars';
+import MarsGalley from './pages/mars/marsGallery';
+import './assets/styles/base/_app.css';
+
 
 function App() {
   return (
     <>
-      <div>
-       <HeaderNasa/>
-       <RocketNasa/>
-       <Cloud/>
-       <ButtonNasa/>
-      </div>
-      
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Landing/>}/>
+        <Route path='/Mars' element={<MarsPage/>}/>
+        <Route path='/Mars-gallery' element={<MarsGalley/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }

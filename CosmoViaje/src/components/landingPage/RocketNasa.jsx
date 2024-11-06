@@ -1,5 +1,6 @@
 import React from 'react';
-import rocketImage from './../../assets/styles/components/landingPage/core/cohete .svg'; // Asegúrate de que esta ruta sea correcta
+import rocketImage from '../../assets/images/pages/landing/cohete.svg'; 
+import '../../assets/styles/components/landingPage/core/_rocket.css'
 
 const RocketNasa = () => {
   return (

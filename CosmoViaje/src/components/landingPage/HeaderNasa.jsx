@@ -1,12 +1,11 @@
 import React from 'react';
-import LogoCosmo from './../../assets/styles/components/landingPage/core/LogoCosmo.svg';
-
+import LogoCosmo from '../../assets/images/pages/landing/LogoCosmo.svg';
+import '../../assets/styles/components/landingPage/core/_header.css';
 
 const HeaderNasa = () => {
   return (
     <div className='Header'>
-      <img src={LogoCosmo} alt='cosmo Viajes'></img>
-      <div className='presentation'>
+       <div className='presentation'>
         <h1 className="text-cosmo">Cosmo Vajes</h1>
         <p className="text-welcome">
           Bienvenidos a nuestra plataforma educativa, donde la ciencia espacial cobra vida.
@@ -14,9 +13,6 @@ const HeaderNasa = () => {
           estrellas y galaxias, ¡todo de una forma fácil y divertida!
         </p>
         </div>
-        
-       
-    
     </div>
   )
 }

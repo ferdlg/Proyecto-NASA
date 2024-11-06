@@ -1,11 +1,10 @@
 import React from 'react';
+import Button from '@mui/material/Button';
 
 
 const ButtonNasa = () => {
   return (
-    <div className="button-container">
-      <button className="flex-button">Vamos a Viajar</button>
-    </div>
+    <Button variant="contained">Despegar</Button>
   );
 };
 

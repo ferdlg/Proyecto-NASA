@@ -1,0 +1,7 @@
+body{
+    background: #131313;
+    display: flex;
+    min-width: 320px;
+    max-height: 100vh;
+    margin: 0;
+  }
