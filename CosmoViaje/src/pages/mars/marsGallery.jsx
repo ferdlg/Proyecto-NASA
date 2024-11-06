@@ -65,7 +65,6 @@ const MarsGalley =()=>{
                         />
                     </Stack>
                 </div>
-
             </div>
         </div>
         </>
