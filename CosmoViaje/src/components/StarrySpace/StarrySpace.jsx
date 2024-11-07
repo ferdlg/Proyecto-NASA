@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import '../../assets/styles/base/_index.css';
 import '../../assets/styles/components/_space.css';
 import { generateSpaceLayer } from '../../utils/StarrySpace'; 
-import logo from "../../assets/Images/Logo.svg";
+// import logo from "../../assets/Images/Logo.svg";
 
 const StarField = ({children}) => {
     const space1Ref = useRef(null);
@@ -21,7 +21,7 @@ const StarField = ({children}) => {
 
     return (
         <div className="container">
-            <img src={logo}style={{width:'100px', zIndex:'-2', position:'absolute', margin:'0'}} />
+            {/* <img src={logo}style={{width:'100px', zIndex:'-2', position:'absolute', margin:'0'}} /> */}
             <div className="space space-1" ref={space1Ref}></div>
             <div className="space space-2" ref={space2Ref}></div>
             <div className="space space-3" ref={space3Ref}></div>
