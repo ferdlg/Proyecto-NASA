@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import '../../assets/styles/base/_index.css';
 import '../../assets/styles/components/_space.css';
 import { generateSpaceLayer } from '../../utils/StarrySpace'; 
-import logo from "../../assets/images/Logo.svg"
+import logo from "../../assets/Images/Logo.svg";
 
 const StarField = ({children}) => {
     const space1Ref = useRef(null);
