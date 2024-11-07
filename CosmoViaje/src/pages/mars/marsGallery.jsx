@@ -9,6 +9,7 @@ import {getMarsRoverPhotos} from "../../redux/thunks/mars/marsThunk";
 import CardData from "../../components/cardData/cardData";
 import Stack from '@mui/material/Stack';
 import Pagination from '@mui/material/Pagination';
+import DataCard from "../../components/cardData/dataCard";
 
 
 const MarsGalley =()=>{
@@ -51,9 +52,9 @@ const MarsGalley =()=>{
                 <div className="gallery__mars-gallery">
                     <Gallery>
                         {pagination.map((photo) => (
-                            <CardData key={photo.id}>
+                            <DataCard key={photo.id}>
                                 <img src={photo.img_src} alt={`photo ${photo.id}`} className="cardData__img" />
-                            </CardData>
+                            </DataCard>
                         ))}
                     </Gallery>
                     <Stack spacing={2}>
