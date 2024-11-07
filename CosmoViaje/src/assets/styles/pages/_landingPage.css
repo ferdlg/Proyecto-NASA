@@ -4,7 +4,8 @@
   grid-template-areas:
     "rocket header"
     "button button"
-    "cloud cloud";
+    "cloud cloud"
+    "cards cards";
 }
 .landing__header{
   grid-area: header;
@@ -19,4 +20,10 @@
 
 .landing__cloud{
   grid-area: cloud;
+}
+
+.landing__sections{
+  grid-area: cards;
+  display: flex;
+  justify-content: space-around;
 }
