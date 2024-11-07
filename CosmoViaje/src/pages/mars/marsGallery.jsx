@@ -6,7 +6,6 @@ import '../../assets/styles/pages/_galleryMars.css';
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import {getMarsRoverPhotos} from "../../redux/thunks/mars/marsThunk";
-import CardData from "../../components/cardData/cardData";
 import Stack from '@mui/material/Stack';
 import Pagination from '@mui/material/Pagination';
 import DataCard from "../../components/cardData/dataCard";
@@ -57,7 +56,7 @@ const MarsGalley =()=>{
                             </DataCard>
                         ))}
                     </Gallery>
-                    <Stack spacing={2}>
+                    <Stack spacing={2} direction="row" justifyContent="center" sx={{ mt: 4 }}>
                         <Pagination 
                             count={Math.ceil(photos.length / imagesPage)} 
                             color="primary" 

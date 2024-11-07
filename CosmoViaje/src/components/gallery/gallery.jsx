@@ -7,7 +7,10 @@ import { useState } from 'react';
 
 const Gallery = ({ children }) => {
     return (
-        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+        <ImageList  sx={{ width: '100%', height: 'auto' }}
+        cols={{ xs: 1, sm: 2, md: 3 }}
+        gap={8}
+        rowHeight="auto">
             {children.map((child, index) => (
                 <ImageListItem key={index}>
                     {child}
