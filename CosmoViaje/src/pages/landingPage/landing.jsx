@@ -20,7 +20,7 @@ const Landing =()=>{
                 <Cloud></Cloud>
             </div>
             <div className='landing__sections'>
-                <BasicCard name={'Exoplanetas'} description={'el viaje por los planetas extra solares comienza aqui.'} path={'/Mars'}></BasicCard>
+                <BasicCard name={'Exoplanetas'} description={'el viaje por los planetas extra solares comienza aqui.'} path={'/Exoplanets'}></BasicCard>
                 <BasicCard name={'Marte'} description={'hecha un viztazo a las imagenes tomadas en Marte.'} path={'/Mars'}></BasicCard>
             </div>
         </div>

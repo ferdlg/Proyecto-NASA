@@ -33,7 +33,8 @@ export class ExoplanetsService{
         try{
             const multimediaData = await axios.get(`${this.baseUrlMultimediaData}search`,{
                 params:{
-                    q:'exoplanets',
+                    q:'exoplanet',
+                    media_type:'image'
                 }
             });
             return multimediaData;
