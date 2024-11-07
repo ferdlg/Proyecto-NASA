@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import {getMarsRoverPhotos} from "../../redux/thunks/mars/marsThunk";
 import Stack from '@mui/material/Stack';
 import Pagination from '@mui/material/Pagination';
-import DataCard from "../../components/cardData/dataCard";
+import DataCard from "../../components/CardData/dataCard";
 import CustomModal from '../../components/modal/CustomModal';
 import { Button } from '@mui/material';
 

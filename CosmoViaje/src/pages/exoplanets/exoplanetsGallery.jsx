@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { getExoplanetsMultimedia } from "../../redux/thunks/exoplanets/exoPlanetsThunk";
 import Stack from '@mui/material/Stack';
 import Pagination from '@mui/material/Pagination';
-import DataCard from "../../components/cardData/dataCard";
+import DataCard from "../../components/CardData/dataCard";
 import Subtitle from "../../components/utils/subtitle";
 import { Typography, Button } from '@mui/material';
 import CustomModal from '../../components/modal/CustomModal';
