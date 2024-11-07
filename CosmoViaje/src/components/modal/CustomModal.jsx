@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 
 
 const ModalContainer = styled(Box)(({ theme }) => ({
-  display: 'flex',
+  display: 'block',
   margin: 'auto',
   alignItems: 'center',
   justifyContent: 'center',
@@ -15,6 +15,7 @@ const ModalContainer = styled(Box)(({ theme }) => ({
   boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.8)',
   width: '90%',
   maxWidth: '1000px',
+  zIndex:4,
   [theme.breakpoints.down('sm')]: {
     padding: '20px',
     maxWidth: '95%',
@@ -22,8 +23,8 @@ const ModalContainer = styled(Box)(({ theme }) => ({
 }));
 
 const ContentBox = styled(Box)(({ theme }) => ({
-  display: 'flex',
   flexDirection: 'row',
+  justifyItems: 'center',
   backgroundColor: '#d9d9d9',
   borderRadius: '8px',
   padding: '20px',
@@ -34,7 +35,7 @@ const ContentBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const ImageContainer = styled(Box)(({ theme }) => ({
+export const ImageContainer = styled(Box)(({ theme }) => ({
   flexBasis: '50%',
   marginRight: '20px',
   [theme.breakpoints.down('sm')]: {
@@ -44,7 +45,7 @@ const ImageContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-const TextContainer = styled(Box)(({ theme }) => ({
+export const TextContainer = styled(Box)(({ theme }) => ({
   flexBasis: '50%',
   display: 'flex',
   flexDirection: 'column',
@@ -71,43 +72,23 @@ const CloseButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-const CustomModal = ({ open, handleClose, planetaId }) => {
-  const [imagenUrl, setImagenUrl] = useState('');
-
- 
+const CustomModal = ({ open, handleClose , children}) => {
 
   return (
-    <Modal open={open} onClose={handleClose}>
-      <ModalContainer>
+    <div>
+    <Modal open={open} onClose={handleClose} >
+    <ModalContainer>
         <ContentBox>
-          <ImageContainer>
-            <img
-              src="https://kids.jotdown.es/wp-content/uploads/2020/03/planetas.jpeg" 
-              alt="Imagen del planeta"
-              style={{ width: '100%', borderRadius: '8px' }}
-            />
-          </ImageContainer>
-          <TextContainer>
-            <Typography variant="h5" fontWeight="bold" gutterBottom>
-              Imagen del título 
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-              Descripción de la imagen en nuestra plataforma educativa, donde la ciencia espacial cobra vida.
-              Aquí podrás descubrir la majestuosidad del cosmos, aprender sobre los planetas, estrellas y galaxias, ¡todo de una forma fácil y divertida!
-            </Typography>
-            <Typography variant="body2" color="textSecondary">
-              Fotógrafo o herramienta de fotografía
-            </Typography>
+          {children}
             <CloseButton onClick={handleClose}>
               VOLVER A LA GALERÍA
             </CloseButton>
-          </TextContainer>
         </ContentBox>
       </ModalContainer>
     </Modal>
+    </div>
   );
 };
 
 export default CustomModal;
-
 

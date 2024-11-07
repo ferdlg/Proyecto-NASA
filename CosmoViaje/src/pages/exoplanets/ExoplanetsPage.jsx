@@ -11,17 +11,16 @@ import '../../assets/styles/pages/_Exoplanets.css'
 function ExoplanetPage() {
     return (
         <div className="exoplanetPage">
-            <img src={logo} alt="CosmoViaje" className="logo" />
             <img src={planet} alt="Planeta" className='planet-image' />
             <img src={planet2} alt="Planeta" className='planet-image-right' />
             <img src={planet3} alt="Planeta" className='planet-image-right2' />
 
-            <div>
+            <div className='exoplanetPage__description'>
                 <Description />
             </div>
 
-            <div>
-                <Buttons />
+            <div className='exoplanetPage__buttons'>
+                <Buttons path1={'/Exoplanets-data'} path2={'/Exoplanets-gallery'}/>
             </div>
 
             <div className="astronaut-group">

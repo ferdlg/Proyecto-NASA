@@ -18,7 +18,7 @@ export class ExoplanetsService{
     async getConfirmedExoplanets(){
         try{
             const apiKey = import.meta.env.VITE_NASA_API_KEY;
-            const scientificData = await axios.get(`${this.baseUrlScientificData}TAP/sync?query=SELECT+objectid,+pl_name,+hostid,+hostname,+disc_year,+discoverymethod,+pl_orbper+FROM+pscomppars+WHERE+disc_year+>+2020&format=json`,{
+            const scientificData = await axios.get(`https://cors-anywhere.herokuapp.com/${this.baseUrlScientificData}TAP/sync?query=SELECT+objectid,+pl_name,+hostid,+hostname,+disc_year,+discoverymethod,+pl_orbper+FROM+pscomppars+WHERE+disc_year+>+2020&format=json`,{
                 params:{
                     api_key: apiKey
                 }
@@ -31,11 +31,7 @@ export class ExoplanetsService{
     }
     async getExoplanetsMultimedia(){
         try{
-            const multimediaData = await axios.get(`${this.baseUrlMultimediaData}search`,{
-                params:{
-                    q:'exoplanet',
-                    media_type:'image'
-                }
+            const multimediaData = await axios.get(`${this.baseUrlMultimediaData}search?q=exoplanet&media_type=image`,{
             });
             return multimediaData;
         }catch(e){

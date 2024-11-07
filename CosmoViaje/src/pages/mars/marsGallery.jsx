@@ -1,5 +1,4 @@
 import Gallery from "../../components/gallery/gallery";
-import Grid from '@mui/material/Grid2';
 import Title from "../../components/utils/title";
 import rovertAlien from "../../assets/images/pages/mars/rovert-alien.svg";
 import '../../assets/styles/pages/_galleryMars.css';
@@ -9,6 +8,8 @@ import {getMarsRoverPhotos} from "../../redux/thunks/mars/marsThunk";
 import Stack from '@mui/material/Stack';
 import Pagination from '@mui/material/Pagination';
 import DataCard from "../../components/cardData/dataCard";
+import CustomModal from '../../components/modal/CustomModal';
+import { Button } from '@mui/material';
 
 
 const MarsGalley =()=>{
@@ -26,6 +27,11 @@ const MarsGalley =()=>{
     const handlePageChange =(event, value)=>{
         setCurrentPage(value);
     };
+
+    const [openIndex, setOpenIndex] = useState(null);  
+    const handleOpen = (index) => setOpenIndex(index);  
+    const handleClose = () => setOpenIndex(null);  
+
     useEffect(()=>{
         const fetchData = async()=>{
             const result = await dispatch(getMarsRoverPhotos());
@@ -50,9 +56,17 @@ const MarsGalley =()=>{
                 </div>
                 <div className="gallery__mars-gallery">
                     <Gallery>
-                        {pagination.map((photo) => (
+                        {pagination.map((photo, index) => (
                             <DataCard key={photo.id}>
                                 <img src={photo.img_src} alt={`photo ${photo.id}`} className="cardData__img" />
+                                <Button variant="outlined" onClick={() => handleOpen(index)}>Ver más</Button>
+                                <CustomModal open={openIndex === index} handleClose={handleClose}>
+                                        <div style={{justifyContent :'center'}}>
+                                            
+                                            <img src={photo.img_src} alt={`photo ${photo.id}`} style={{ width: '360px', borderRadius: '8px' }} />
+    
+                                        </div>
+                                </CustomModal>
                             </DataCard>
                         ))}
                     </Gallery>

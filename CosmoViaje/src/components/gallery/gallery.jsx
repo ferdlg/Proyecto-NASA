@@ -1,11 +1,11 @@
 
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageList from '@mui/material/ImageList';
-
-import { useState } from 'react';
+import CustomModal from '../modal/CustomModal';
 
 const Gallery = ({ children }) => {
     return (
+        <>
         <ImageList  >
             {children.map((child, index) => (
                 <ImageListItem key={index}>
@@ -13,6 +13,7 @@ const Gallery = ({ children }) => {
                 </ImageListItem>
             ))}
         </ImageList>
+        </>
     );
 };
 

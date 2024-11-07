@@ -1,13 +1,13 @@
-import { Box, Card, CardContent, Typography } from '@mui/material';
-import Button from '@mui/material/Button';
+import { Box, Card, CardContent, Typography , Button} from '@mui/material';
 
-
-const DataCard = ({ children }) => (
+const DataCard = ({ children }) => {
+  return(
     <Card className="styled-card">
       <CardContent >
         {children}
-        <Button variant="outlined">Ver mas</Button>
       </CardContent>
     </Card>
-  );
+  )
+};
+
 export default DataCard;
