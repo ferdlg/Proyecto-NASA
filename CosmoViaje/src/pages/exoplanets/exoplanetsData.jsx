@@ -1,4 +1,3 @@
-import astronautRocket from "../../assets/Images/pages/exoplanets/astronaut-rocket.svg"
 import Gallery from "../../components/gallery/gallery"
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
@@ -45,7 +44,7 @@ const ExoplanetsData= ()=>{
                 <Subtitle text={'Para los curiosos!'}></Subtitle>
             </div>
             <div className="exoplanetsData__img">
-                <img src={astronautRocket} alt="astronaut-rocket" />
+                <img src="../../assets/Images/pages/exoplanets/astronaut-rocket.svg" alt="astronaut-rocket" />
             </div>
             <div className="exoplanetsData__gallery">
                 <Gallery>

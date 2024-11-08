@@ -1,5 +1,4 @@
 import React from 'react'
-import cloud from '../../assets/Images/pages/landing/cloud.svg';
 import '../../assets/styles/components/landingPage/core/_cloud.css'
 
 const Cloud = () => {
@@ -7,7 +6,7 @@ const Cloud = () => {
     <div className="img-animations">
       {
         Array.from({ length:5 }).map((_, index) => (
-          <img key={index} src={cloud} alt="nube flotante" />
+          <img key={index} src="../../assets/Images/pages/landing/cloud.svg" alt="nube flotante" />
         ))
       }
     </div>

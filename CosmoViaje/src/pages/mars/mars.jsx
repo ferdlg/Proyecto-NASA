@@ -1,9 +1,6 @@
 import ButtonMars from "../../components/utils/button"
 import Subtitle from "../../components/utils/subtitle"
 import Title from "../../components/utils/title"
-import fondoMarte from "../../assets/Images/pages/mars/fondo-paisaje-marte.png";
-import alienPeace from "../../assets/Images/pages/mars/alien-peace.png";
-import alienAstronaut from "../../assets/Images/pages/mars/alien-astronaut.png";
 import "../../assets/styles/pages/_mars.css"
 
 
@@ -11,7 +8,7 @@ const MarsPage = ()=>{
     return(
         <div className="page__mars">
             <div className="page__mars-background">
-                <img src={fondoMarte} alt="fondo-paisaje-marte" className="page__mars-background-img" />
+                <img src="../../assets/Images/pages/mars/fondo-paisaje-marte.png" alt="fondo-paisaje-marte" className="page__mars-background-img" />
             </div>
             <div className="page__mars-title">
                 <Title text={'BIENVENIDX AL UNIVERSO DE MARTE'}></Title>
@@ -23,8 +20,8 @@ const MarsPage = ()=>{
                 <ButtonMars></ButtonMars>
             </div>
             <div className="page_mars-images">
-                <img src={alienPeace} alt="alien-peace" className="page_mars-images-peace" />
-                <img src={alienAstronaut} alt="alien-astronaut" className="page_mars-images-atronaut"/>
+                <img src="../../assets/Images/pages/mars/alien-peace.png" alt="alien-peace" className="page_mars-images-peace" />
+                <img src="../../assets/Images/pages/mars/alien-astronaut.png" alt="alien-astronaut" className="page_mars-images-atronaut"/>
             </div>
         </div>
     )

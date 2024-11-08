@@ -1,6 +1,5 @@
 import Gallery from "../../components/gallery/gallery";
 import Title from "../../components/utils/title";
-import astronautArt from "../../assets/Images/pages/exoplanets/astronautaArt.svg";
 import '../../assets/styles/pages/_galleryexoplanets.css';
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
@@ -61,7 +60,7 @@ const ExoplanetsGallery = () => {
                     <Title text={'BIENVENIDX A LA GALERIA DE EXOPLANETAS'}></Title>
                     <Subtitle text={'Disfruta las obras de arte del espacio!'}></Subtitle>
                     <div className="gallery__exoplanets-img">
-                        <img src={astronautArt} alt="rovert-alien-svg" className="gallery__exoplanets-img-alien" />
+                        <img src="../../assets/Images/pages/exoplanets/astronautaArt.svg" alt="rovert-alien-svg" className="gallery__exoplanets-img-alien" />
                     </div>
                 </div>
                 <div className="gallery__exoplanets__section-gallery">

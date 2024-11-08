@@ -1,5 +1,4 @@
 import React from 'react';
-import LogoCosmo from '../../assets/Images/pages/landing/LogoCosmo.svg';
 import '../../assets/styles/components/landingPage/core/_header.css';
 
 const HeaderNasa = () => {
