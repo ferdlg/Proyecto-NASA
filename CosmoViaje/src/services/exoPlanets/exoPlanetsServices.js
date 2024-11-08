@@ -1,10 +1,4 @@
 import axios from "axios";
-import exoPlanetData from '../../data/exoplanetsData.json'
-
-export const fetchExoplanetsData = async()=>{
-    const response = await axios.get(exoPlanetData);
-    return response.data;
-}
 
 export class ExoplanetsService{
     constructor(){
