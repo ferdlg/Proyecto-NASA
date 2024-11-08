@@ -1,7 +1,6 @@
 
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageList from '@mui/material/ImageList';
-import CustomModal from '../modal/CustomModal';
 
 const Gallery = ({ children }) => {
     return (

@@ -1,6 +1,6 @@
 import Gallery from "../../components/gallery/gallery";
 import Title from "../../components/utils/title";
-import rovertAlien from "../../assets/images/pages/mars/rovert-alien.svg";
+import rovertAlien from "../../assets/Images/pages/mars/rovert-alien.svg";
 import '../../assets/styles/pages/_galleryMars.css';
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";

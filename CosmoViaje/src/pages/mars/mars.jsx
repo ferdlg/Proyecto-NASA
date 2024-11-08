@@ -1,9 +1,9 @@
 import ButtonMars from "../../components/utils/button"
 import Subtitle from "../../components/utils/subtitle"
 import Title from "../../components/utils/title"
-import fondoMarte from "../../assets/images/pages/mars/fondo-paisaje-marte.png";
-import alienPeace from "../../assets/images/pages/mars/alien-peace.png";
-import alienAstronaut from "../../assets/images/pages/mars/alien-astronaut.png";
+import fondoMarte from "../../assets/Images/pages/mars/fondo-paisaje-marte.png";
+import alienPeace from "../../assets/Images/pages/mars/alien-peace.png";
+import alienAstronaut from "../../assets/Images/pages/mars/alien-astronaut.png";
 import "../../assets/styles/pages/_mars.css"
 
 

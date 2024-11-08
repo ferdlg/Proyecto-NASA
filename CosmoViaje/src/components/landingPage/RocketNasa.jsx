@@ -1,5 +1,5 @@
 import React from 'react';
-import rocketImage from '../../assets/images/pages/landing/cohete.svg'; 
+import rocketImage from '../../assets/Images/pages/landing/cohete.svg'; 
 import '../../assets/styles/components/landingPage/core/_rocket.css'
 
 const RocketNasa = () => {

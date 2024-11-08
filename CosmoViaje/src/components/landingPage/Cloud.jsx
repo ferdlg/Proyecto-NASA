@@ -1,5 +1,5 @@
 import React from 'react'
-import cloud from '../../assets/images/pages/landing/cloud.svg';
+import cloud from '../../assets/Images/pages/landing/cloud.svg';
 import '../../assets/styles/components/landingPage/core/_cloud.css'
 
 const Cloud = () => {
