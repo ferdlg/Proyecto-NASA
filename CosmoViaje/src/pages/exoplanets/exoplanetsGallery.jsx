@@ -1,5 +1,4 @@
 import Gallery from "../../components/gallery/gallery";
-import Grid from '@mui/material/Grid2';
 import Title from "../../components/utils/title";
 import astronautArt from "../../assets/Images/pages/exoplanets/astronautaArt.svg";
 import '../../assets/styles/pages/_galleryexoplanets.css';
