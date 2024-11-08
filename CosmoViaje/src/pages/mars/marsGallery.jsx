@@ -1,6 +1,5 @@
 import Gallery from "../../components/gallery/gallery";
 import Title from "../../components/utils/title";
-import rovertAlien from "../../assets/Images/pages/mars/rovert-alien.svg";
 import '../../assets/styles/pages/_galleryMars.css';
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
@@ -52,7 +51,7 @@ const MarsGalley =()=>{
             </div>
             <div className="gallery__mars__section-gallery">
                 <div className="gallery__mars-img">
-                    <img src={rovertAlien} alt="rovert-alien-svg" className="gallery__mars-img-alien" />
+                    <img src="../../assets/Images/pages/mars/rovert-alien.svg" alt="rovert-alien-svg" className="gallery__mars-img-alien" />
                 </div>
                 <div className="gallery__mars-gallery">
                     <Gallery>
