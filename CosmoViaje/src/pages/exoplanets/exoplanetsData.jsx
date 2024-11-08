@@ -1,5 +1,4 @@
-import Description from "../../components/landingPage/PageExoplanets/Description"
-import astronautRocket from "../../assets/images/pages/exoplanets/astronaut-rocket.svg"
+import astronautRocket from "../../assets/Images/pages/exoplanets/astronaut-rocket.svg"
 import Gallery from "../../components/gallery/gallery"
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
