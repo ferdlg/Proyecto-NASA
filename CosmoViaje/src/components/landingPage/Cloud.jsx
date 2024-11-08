@@ -6,7 +6,7 @@ const Cloud = () => {
     <div className="img-animations">
       {
         Array.from({ length:5 }).map((_, index) => (
-          <img key={index} src="../../assets/Images/pages/landing/cloud.svg" alt="nube flotante" />
+          <img key={index} src="/assets/Images/pages/landing/cloud.svg" alt="nube flotante" />
         ))
       }
     </div>
