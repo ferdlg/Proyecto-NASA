@@ -19,3 +19,9 @@
       transform: translateY(0); 
     }
   }
+@media (max-width:768px) {
+  .img-animations{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

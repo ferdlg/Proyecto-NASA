@@ -76,6 +76,8 @@ const ExoplanetsGallery = () => {
                                         <div style={{justifyItems :'center'}}>
                                             <div style={{justifyItems :'center'}}>
                                                 <Typography variant="h5" fontWeight="bold" gutterBottom color="black">{dataItem.title}</Typography>
+                                            </div>
+                                            <div style={{justifyItems :'center'}}>
                                                 <img src={item.imageLink[0]} alt={dataItem.title} style={{ width: '360px', borderRadius: '8px' }} />
                                             </div>
                                             <div style={{justifyItems :'center', textAlign:'center'}}>

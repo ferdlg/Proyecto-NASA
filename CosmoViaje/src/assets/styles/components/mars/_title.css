@@ -8,3 +8,8 @@
     text-decoration: none;
     color: white;
 }
+@media (max-width: 768px) {
+    .container__title, .container__subtitle {
+        font-size:0.8rem ;
+    }
+}
