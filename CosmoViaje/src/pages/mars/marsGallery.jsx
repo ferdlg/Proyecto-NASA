@@ -60,10 +60,10 @@ const MarsGalley =()=>{
                                 <img src={photo.img_src} alt={`photo ${photo.id}`} className="cardData__img" />
                                 <Button variant="outlined" onClick={() => handleOpen(index)}>Ver más</Button>
                                 <CustomModal open={openIndex === index} handleClose={handleClose}>
-                                        <div style={{justifyContent :'center'}}>
-                                            
-                                            <img src={photo.img_src} alt={`photo ${photo.id}`} style={{ width: '360px', borderRadius: '8px' }} />
-    
+                                        <div style={{justifyItems :'center'}}>
+                                            <div style={{justifyItems :'center'}}>
+                                                <img src={photo.img_src} alt={`photo ${photo.id}`} style={{ width: '360px', borderRadius: '8px' }} />
+                                            </div>
                                         </div>
                                 </CustomModal>
                             </DataCard>
