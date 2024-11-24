@@ -37,6 +37,9 @@
 .page_mars-images-atronaut{
     animation: moveAlien2 5s linear infinite;
 }
+.page__mars-btn{
+    display: flex;
+}
 
 @keyframes moveAlien1 {
     0% {transform: translateX(-38vw);

@@ -2,6 +2,7 @@ import ButtonMars from "../../components/utils/button"
 import Subtitle from "../../components/utils/subtitle"
 import Title from "../../components/utils/title"
 import "../../assets/styles/pages/_mars.css"
+import ButtonBack from "../../components/ButtonBack/button"
 
 
 const MarsPage = ()=>{
@@ -17,7 +18,8 @@ const MarsPage = ()=>{
                 <Subtitle text={'Aqui encontraras una increible variedad de imagenes tomadas por el rover Curiosity de la NASA en su expedicion a Marte, Diviertete!'}></Subtitle>
             </div>
             <div className="page__mars-btn">
-                <ButtonMars></ButtonMars>
+                <ButtonMars className="page__mars-btn-item"></ButtonMars>
+                <ButtonBack className="page__mars-btn-item"></ButtonBack>
             </div>
             <div className="page_mars-images">
                 <img src="../../assets/Images/pages/mars/alien-peace.png" alt="alien-peace" className="page_mars-images-peace" />

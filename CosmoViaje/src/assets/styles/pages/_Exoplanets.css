@@ -10,8 +10,11 @@
 .exoplanetPage__buttons{
     overflow: hidden;
     z-index: 2;
-}
-
+    }
+.exoplanetPage__buttons{
+    display: flex;
+    align-items: center;
+    }
 
 .logo {
     position: absolute;

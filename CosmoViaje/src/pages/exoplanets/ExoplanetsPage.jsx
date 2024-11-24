@@ -1,6 +1,7 @@
 import React from 'react';
 import Description from '../../components/landingPage/PageExoplanets/Description';
 import Buttons from '../../components/landingPage/PageExoplanets/Buttons';
+import ButtonBack from '../../components/ButtonBack/button';
 import '../../assets/styles/pages/_Exoplanets.css'
 
 function ExoplanetPage() {
@@ -16,6 +17,7 @@ function ExoplanetPage() {
 
             <div className='exoplanetPage__buttons'>
                 <Buttons path1={'/Exoplanets-data'} path2={'/Exoplanets-gallery'}/>
+                <ButtonBack></ButtonBack>       
             </div>
 
             <div className="astronaut-group">
